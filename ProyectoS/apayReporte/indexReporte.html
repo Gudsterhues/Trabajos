@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/admiPay.jpg">
+    <link rel="stylesheet" href="./styles/stylesReport.css">
+    <script src="./scriptsR/registrar.js"></script>
+    <title>admiPay</title>
+</head>
+<body>
+    <header><a href="../aPayHome/admiPayHome.html"><img src="../imagenes/admiPay.jpg" alt="AdmiPay Logo" width="60" height="60"></a><h1>AdmiPay</h1></header>
+
+     <div class="container">
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <header class="low_header">
+        <h1>Reporte Mensual</h1>
+        <button class="btn-volver" onclick="window.history.back()">Volver</button>
+      </header>
+
+      <section class="cards">
+        <div class="card azul">
+          <h3>Total Ingresos</h3>
+          <p>$ 3.480.000</p>
+        </div>
+        <div class="card verde">
+          <h3>Pagos Realizados</h3>
+          <p>79</p>
+        </div>
+        <div class="card amarillo">
+          <h3>Pagos Pendientes</h3>
+          <p>45</p>
+        </div>
+        <div class="card rosado">
+          <h3>Porcentaje de Cumplimiento</h3>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 63%;"></div>
+          </div>
+          <p>63%</p>
+        </div>
+      </section>
+
+      <section class="tabla-reporte">
+        <h2>Detalle de Pagos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Alumno</th>
+              <th>Clase</th>
+              <th>Fecha de Pago</th>
+              <th>Estado</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laura Gómez</td>
+              <td>Salsa</td>
+              <td>03/10/2025</td>
+              <td class="pagado">Pagado</td>
+              <td>$80.000</td>
+            </tr>
+            <tr>
+              <td>Juan Pérez</td>
+              <td>Bachata</td>
+              <td>-</td>
+              <td class="pendiente">Pendiente</td>
+              <td>$80.000</td>
+            </tr>
+            <tr>
+              <td>Camila Díaz</td>
+              <td>Merengue</td>
+              <td>05/10/2025</td>
+              <td class="pagado">Pagado</td>
+              <td>$90.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="contenedor-boton-reporte">
+            <button class="btn-generar-reporte">Generar reporte</button>
+        </div>
+      </section>
+    </main>
+  </div>
+    
+</body>
+</html>

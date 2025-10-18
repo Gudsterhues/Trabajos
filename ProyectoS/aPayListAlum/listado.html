@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/admiPay.jpg">
+    <link rel="stylesheet" href="../aPayListAlum/styles/styleListado.css">
+    <script src="./scripts/listadoAlumn.js"></script>
+    <title>admiPay</title>
+</head>
+<body>
+    <header id="princi"><a href="../aPayHome/admiPayHome.html"><img src="../imagenes/admiPay.jpg" alt="AdmiPay Logo" width="60" height="60"></a>  <h1>AdmiPay</h1>
+    </header>
+           <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="title-section">
+                    <h1>AdmiPay</h1>
+                    <p>Listado de Alumnos Sandunguera</p>
+                </div>
+                <div class="search-section">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Buscar alumno...">
+                        <button id="searchButton" class="search-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="lista">
+                <div class="alumnos-grid" id="alumnosGrid">
+                    <!-- Las tarjetas de alumnos se generarán aquí -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Botón flotante para actualizar alumno -->
+        <div class="floating-button-container">
+            <a href="./actualizarAlumnoP.html" class="floating-button">
+                Actualizar Alumno
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>

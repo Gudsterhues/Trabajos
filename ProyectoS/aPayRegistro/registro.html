@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/admiPay.jpg">
+    <link rel="stylesheet" href="./stylesR/styleR.css">
+    <script src="./scriptsR/registrar.js"></script>
+    <title>admiPay</title>
+</head>
+<body>
+    <header><a href="../aPayHome/admiPayHome.html"><img src="../imagenes/admiPay.jpg" alt="AdmiPay Logo" width="60" height="60"></a><h1>AdmiPay</h1></header>
+
+        <main>
+        <h2>Registro de Alumnos</h2>
+
+        <section id="datosRegistro">
+           <!-- Sección 1: Info Alumno -->
+           <div id="infoAlumno" class="seccion activa">
+
+                <h3>Datos De alumno</h3>
+                <p>Nombre Completo</p>
+                <input type="text" id="nombreC">
+                <p>Documento de Identidad</p>
+                <input type="text" id="idUser">
+                <p>Telefono de Contacto</p>
+                <input type="text" id="celular"> 
+            
+                <select id="tipoCel">
+                    <option value="elegir">Elegir...</option>
+                    <option value="personal">Personal</option>
+                    <option value="emergencia">Emergencia</option>
+                </select>
+                <p>Correo Electronico</p>
+                <input type="email" id="correo">
+                
+                <div class="botones-navegacion">
+                    <button id="siguienteInfoAlumno" class="btn-siguiente">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Sección 2: Info Paquete -->
+            <div id="infoPaquete" class="seccion">
+                <h3>Datos del Paquete</h3>
+
+                <p>tipo paquete</p>
+                <select id="tipoClase">
+                    
+                    <option value="elegir">Elegir...</option>
+                    <option value="Grupal">Grupal</option>
+                    <option value="Particular1">Particular 1 persona🕺</option>
+                    <option value="Particular2">Particular en pareja💃🕺</option>
+                    <option value="P1_domicilio">Particular 1 persona a domicilio🕺🚗</option>
+                    <option value="P2_domicilio">Particular en pareja a domicilio💃🕺🚗</option>
+                </select>
+
+                <p>Cantidad de Clases Grupal</p>
+                <select id="cantidadClaseGrupal">
+                    <option value="elegir">Elegir...</option>
+                    <option value="4c">4 clases</option>
+                    <option value="8c">8 clases</option>
+                    <option value="12c">12 clases</option>
+                    <option value="16c">16 clases</option>
+                </select>
+
+                <p>Cantidad de Clases Particulares</p>
+                <select id="cantidadClaseParti">
+                    <option value="elegir">Elegir...</option>
+                    <option value="1h">1 hora</option>
+                    <option value="4c">4 clases</option>
+                    <option value="6c">6 clases</option>
+                    <option value="8c">8 clases</option>
+                </select>
+                
+                <div class="botones-navegacion">
+                    <button id="atrasInfoPaquete" class="btn-atras">Atrás</button>
+                    <button id="siguienteInfoPaquete" class="btn-siguiente">Siguiente</button>
+                </div>
+            </div>
+
+           <!-- Sección 3: Info Clase -->
+           <div id="infoClase" class="seccion">
+                <h3>Datos De la Clase</h3>
+                
+                <p>Estilo</p>
+                <select id="tipoBaile">
+                    <option value="elegir">Elegir...</option>
+                    <option value="salsa">Salsa caleña</option>
+                    <option value="salsaLa">Salsa en Linea</option>
+                    <option value="bachata">Bachata</option>
+                    <option value="urbano">Baile Urbano</option>
+                </select>
+                
+                <div class="botones-navegacion">
+                    <button id="atrasInfoClase" class="btn-atras">Atrás</button>
+                    <button id="agregarEstudiante" class="btn-agregar">Agregar Estudiante</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

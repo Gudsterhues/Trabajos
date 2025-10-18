@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(214, 214, 214);
+    font-family: 'Lucida Sans';
+}
+header {
+    display: flex;
+    align-items: center; /*centra verticalmente los elementos */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    padding: 10px;
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #e0e0e0; /* Línea inferior */
+
+        }
+
+header img {
+    width: 60px;
+    height: 60px;
+        }
+
+main{
+    display:flex;
+    gap: 60px;
+    padding: 20px;
+    min-height: 400px;
+        }
+        
+#general{
+    flex: 0 0 450px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px 40px ;
+    box-shadow: 0 10px 4px rgba(0,0,0,0.1);
+
+        }
+#general li {
+    margin-bottom: 20px;
+
+}
+#general ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#general a {
+    display: block;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+#general a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#panelIG {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#alumnosT p,#pagosPend p,#pagosReal p{
+    text-align: center;
+    font-style:initial;
+    font-size: 45px;
+}
+#progresoMensual{
+    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+#progresoMensual svg{
+    width: 150px;
+    height: 150px;
+}
+
+#progresoMensual circle{
+    fill: none;
+    
+    stroke-width: 20px;
+    --porcentaje:40;
+   
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-dasharray: 100 100;
+    stroke:#dcddde;
+}
+
+@keyframes rellenar{ 
+    to{
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+
+}
+
+#progresoMensual circle:nth-child(2){/*segundo Circulo, este se ejecuta por ensima del primer circulo creado y es el que tiene el color mas intenso*/
+
+     stroke-dasharray: 0 100; /*Captura el porcentaje ingresado mediante una variable a nivel css*/
+     stroke: #007bff;
+     animation: rellenar 0.8s linear forwards;
+}
+
+
+#panelIG > div { /*el > hace referencia a que se aplique el estilo a los hijos directos (en este caso div) de panelIG */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#alumnosT {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #e3f2fd !important;
+}
+
+#pagosPend {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #fff3e0 !important;
+}
+
+#pagosReal {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #e8f5e8 !important;
+}
+
+#progresoMensual {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #fce4ec !important;
+}
+
+#panelIG h2 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}

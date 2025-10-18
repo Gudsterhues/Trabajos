@@ -1,0 +1,97 @@
+#navbar{
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+body{
+    background: linear-gradient(60deg, #cb32c1 0%, #6a11cb 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 0;
+}
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+#menuDesplegable{
+    background: linear-gradient(135deg,#cb32c1 0%, #6a11cb 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#menuDesplegable:active {
+    transform: translateY(0);
+}
+
+/* Lista del menú (inicialmente oculta) */
+#menuLista {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Cuando el menú está activo */
+#menuLista.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#menuLista li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#menuLista li:last-child {
+    border-bottom: none;
+}
+
+#menuLista a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#menuLista a:hover {
+    background-color: #f8f8f8;
+    color: #6a11cb;
+    padding-left: 25px;
+}
+
+body{
+    color: #222;
+}
+
+.imagen{
+    height: 150px;
+    width: 150px;
+}
+section{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+    scroll-margin-top: 80px;
+}

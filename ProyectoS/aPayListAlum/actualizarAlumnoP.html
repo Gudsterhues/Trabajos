@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recolecta de datos — Estructura mínima (HTML solo)</title>
+  <link rel="stylesheet" href="./styles/styleActu.css">
+</head>
+<body>
+    <header id="princi"><a href="../aPayHome/admiPayHome.html"><img src="../imagenes/admiPay.jpg" alt="AdmiPay Logo" width="60" height="60"></a>  <h1>AdmiPay</h1>
+    <a id="volver" href="./listado.html">Volver</a>
+    </header>
+ 
+    
+
+  <main>
+    <h1>Actualizacion de usuarios</h1> 
+    <section aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Digite sus datos</h2>
+      <form id="record-form" autocomplete="off">
+        <input type="hidden" id="recordId" name="recordId" />
+
+        <fieldset>
+          <legend>Datos del registro</legend>
+
+          <div>
+            <label for="nombre">Nombre *</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+
+          <div>
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div>
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option value="General">Salsa</option>
+              <option value="Prioritario">Bachata</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="fecha" type="date" />
+          </div>
+
+          <div>
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" name="observaciones"></textarea>
+          </div>
+
+          <div>
+            <select id="estado" name="estado">
+              <option value="Activo">Activo</option>
+              <option value="Retirado">Retirado</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="submit" id="guardar">Guardar</button>
+          <button type="reset" id="limpiar">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Busqueda de usuarios -->
+    <section aria-labelledby="titulo-listado">
+      <h2 id="titulo-listado">Registros</h2>
+
+      <!-- Filtro de ejemplo (sin funcionalidad aún) -->
+      <form role="search" aria-label="Filtrar registros">
+        <label for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Nombre, email o categoría" />
+        <button type="submit">Filtrar</button>
+      </form>
+
+      <!-- Tabla de resultados (placeholder). Llena desde el servidor o con JS cuando lo agregues. -->
+      <table id="tabla-registros" aria-describedby="titulo-listado">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="7">Aquí aparecerán los registros.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 — Logiciel--Admipay</p>
+  </footer>
+</body>
+</html>
