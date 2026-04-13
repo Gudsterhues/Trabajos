@@ -1,0 +1,101 @@
+.binary-tree-page {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.control-box {
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  min-width: 250px;
+  background: #f8f8f8;
+}
+
+.control-box input {
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.control-box button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.search-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.prints {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f3f7ff;
+}
+
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.html-preview,
+.d3-preview {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.tree-wrapper {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+}
+
+.tree-node-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.tree-node-value {
+  min-width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.tree-node-children {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.tree-node-child {
+  display: flex;
+  justify-content: center;
+  min-width: 80px;
+}
+
+.empty-node {
+  color: #999;
+  font-size: 20px;
+  margin-top: 8px;
+}

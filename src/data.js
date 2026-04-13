@@ -1,0 +1,1 @@
+export const numerosIniciales = [50, 30, 70, 20, 40, 60, 80, 10, 35, 90]
